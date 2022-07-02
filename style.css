@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.head{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width:580px;
+    background-color: white;
+    border-radius: 2%;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
+    overflow: hidden;
+}
+
+h1{
+    color: hsl(212, 21%, 14%);
+}
+
+h1,strong{
+    font-family: 'Fraunces', serif ;
+}
+
+.card{
+    width: 340px;
+    padding:30px
+}
+
+.para{
+    width: 250px;
+    margin: 15px 0px;
+    line-height: 22px;
+}
+
+.para , .head , s{
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+
+strong{
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+s{
+    margin-left: 35px;
+}
+
+button{
+    font-family:'Montserrat', sans-serif; 
+    font-weight: 700;
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    background-color:hsl(158, 36%, 37%) ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+button img{
+    margin-right: 10px;
+}
+button:hover{
+    background-color: #1A4031;
+    cursor: pointer;
+}
+.deskdis{
+    width: 275px;
+}
+.mobdis{
+    display: none;
+}
+@media (max-width:600px) {
+    .deskdis{
+        display: none;
+    }
+    .mobdis{
+        display: block;
+        height: 240px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-top:30px ;
+    }
+    main{
+        align-items: baseline;
+    }
+}
